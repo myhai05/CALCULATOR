@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>CALCULATOR</h1>    
+<div id="container">
+   <div id="display"></div>   
+  <div id="buttons">
+    <div class="row">
+        <button class="button" id="btn1" onclick="screen.innerHTML+='1'">1</button>
+        <button class="button" id="btn2" onclick="screen.innerHTML+='2'">2</button>
+        <button class="button" id="btn3" onclick="screen.innerHTML+='3'">3</button>
+        <button class="button" id="btn3" onclick="plus()">+</button>
+   </div>
+    
+    <div class="row">
+        <button class="button" id="btn4" onclick="screen.innerHTML+='4'">4</button>
+        <button class="button" id="btn5" onclick="screen.innerHTML+='5'">5</button>
+        <button class="button" id="btn6" onclick="screen.innerHTML+='6'">6</button>
+        <button class="button" id="btn6" onclick="less()">-</button>
+    </div>
+    <div class="row">
+        <button class="button" id="btn7" onclick="screen.innerHTML+='7'">7</button>
+        <button class="button" id="btn8" onclick="screen.innerHTML+='8'">8</button>
+        <button class="button" id="btn9" onclick="screen.innerHTML+='9'">9</button>
+        <button class="button" id="btn15" onclick="multiplying()">x</button>
+    </div>
+    <div class="row">
+        <button class="button" id="btn10" onclick="zero()">0</button>
+        <button class="button" id="btn17" onclick="point()">.</button>
+        <button class="button" id="btn16" onclick="reset()">C</button>
+        <button class="button" id="btn14" onclick="division()">/</button>
+    </div>
+    <div class="row">
+      <button class="button" id="btn18" onclick="equal()">=</button>
+      
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+
+</body>
+</html>
